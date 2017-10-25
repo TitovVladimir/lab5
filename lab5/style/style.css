@@ -11,7 +11,7 @@ body {
   background-color: #23302c;
 }
 
-#main_form {
+.main_form {
   padding-top: 200px;
   margin : auto;
   width: 1000px;
@@ -66,13 +66,13 @@ body {
   transition: background-color.2s ease;
 }
 
-#choice_block > .choise_button {
+#choice_block > .reset_button {
   padding-top: 15px;
   margin : auto;
   text-align: center;
 }
 
-#choice_block > .choise_button > input {
+#choice_block > .reset_button > input {
   color: #defff6;
   font-family: 'PT Sans', sans-serif;
   width: 100px;
@@ -86,7 +86,7 @@ body {
   outline: 0;
 }
 
-#choice_block > .choise_button > input:hover {
+#choice_block > .reset_button > input:hover {
 	background-color: #38828a;
 	transition: background-color.2s ease;
 }

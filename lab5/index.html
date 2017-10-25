@@ -3,32 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>lab5</title>
-    <script src="js/script.js"></script>
 	<link rel="stylesheet" href="style/style.css" type="text/css"/>
   </head>
   <body>
-    <form id="main_form">
+    <form class="main_form">
       <div id="choice_block">
 	    <div class="select_menu">
-		  <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
+		  <select class="mark_select">
+		    <option>Выберите марку</option>
+            <option>bmw</option>
+            <option>audi</option>
+			<option>mazda</option>
           </select>
-		  <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
+		  <select class="model_select">
+            <option>Выберите модель</option>
           </select>
-		  <select>
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
+		  <select class="year_select">
+            <option>Выберите год</option>
           </select>
 		</div>
-		<div class="choise_button">
-		  <input type="submit" value="Поиск!">
+		<div class="reset_button">
+		  <input type="submit" value="Сброс!">
 		</div>
       </div>
 	  <div id="content_block">
-	    <h1>С 2002 года являюсь убежденным БМВэшником. В гараже побывали два БМВ 5-ой серии и два Х5 в 53 и 70 кузовах.</h1>
+		<div id="car_info">
+		  <h1><img src="https://images54.fotki.com/v1642/photos/1/3735611/14202549/HugsClara_tbsyb747_Cars_-vi.gif" alt="Письма мастера дзен"></h1>
+		</div>
+		<script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/script.js"></script>
 	  </div>
 	</form>
   </body>
