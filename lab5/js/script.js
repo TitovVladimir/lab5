@@ -28,103 +28,103 @@
   }
   
   selectUpdate = function() {
-	if (makeCheck == cars.bmw.make){
-	  if ((cars.bmw.model!=modelCheck)) {
-	    modelSelect.empty();
-	    yearSelect.empty();
-	  }
-	}
-	if (makeCheck == cars.audi.make){
-	  if ((cars.audi.model!=modelCheck)) {
-	    modelSelect.empty();
-	    yearSelect.empty();
-	  }
-	}
-	if (makeCheck == cars.mazda.make){
-	  if ((cars.mazda.model!=modelCheck)) {
-	    modelSelect.empty();
-	    yearSelect.empty();
-	  }
-	}//proverochki
+    if (makeCheck == cars.bmw.make){
+      if ((cars.bmw.model!=modelCheck)) {
+        modelSelect.empty();
+        yearSelect.empty();
+      }
+    }
+    if (makeCheck == cars.audi.make){
+      if ((cars.audi.model!=modelCheck)) {
+        modelSelect.empty();
+        yearSelect.empty();
+      }
+    }
+    if (makeCheck == cars.mazda.make){
+      if ((cars.mazda.model!=modelCheck)) {
+        modelSelect.empty();
+        yearSelect.empty();
+      }
+    }//proverochki
     if (makeCheck == cars.bmw.make) {
       var modelSelectUpdate =
-	  '<option>Выберите модель</option>' +
+      '<option>Выберите модель</option>' +
       '<option>'+cars.bmw.model+'</option>';	
       modelSelect.append(modelSelectUpdate);
-	  if (modelCheck == cars.bmw.model) {
-		var yearSelectUpdate =
-	    '<option>Выберите год</option>' +
-        '<option>'+cars.bmw.year+'</option>';	
+      if (modelCheck == cars.bmw.model) {
+ 	var yearSelectUpdate =
+       '<option>Выберите год</option>' +
+       '<option>'+cars.bmw.year+'</option>';	
         yearSelect.append(yearSelectUpdate);
-	  }
+      }
     }
     if (makeCheck == cars.audi.make) {
-	  var modelSelectUpdate =
-	  '<option>Выберите модель</option>' +
+      var modelSelectUpdate =
+      '<option>Выберите модель</option>' +
       '<option>'+cars.audi.model+'</option>';	
       modelSelect.append(modelSelectUpdate);	
       if (modelCheck == cars.audi.model) {
-		var yearSelectUpdate =
-	    '<option>Выберите год</option>' +
+	var yearSelectUpdate =
+        '<option>Выберите год</option>' +
         '<option>'+cars.audi.year+'</option>';	
         yearSelect.append(yearSelectUpdate);
-	  }	  
+      }	  
     }
     if (makeCheck == cars.mazda.make) {
-	  var modelSelectUpdate =
-	  '<option>Выберите модель</option>' +
+      var modelSelectUpdate =
+      '<option>Выберите модель</option>' +
       '<option>'+cars.mazda.model+'</option>';	
       modelSelect.append(modelSelectUpdate);	 
       if (modelCheck == cars.mazda.model) {
-		var yearSelectUpdate =
-	    '<option>Выберите год</option>' +
+ 	var yearSelectUpdate =
+        '<option>Выберите год</option>' +
         '<option>'+cars.mazda.year+'</option>';	
         yearSelect.append(yearSelectUpdate);
-	  }	  
+      }	  
     }
   }
   
   viewInfoCar = function() {
-	var contentBlock = $('#car_info');
+    var contentBlock = $('#car_info');
     if (makeCheck == cars.bmw.make) {
-	  if (modelCheck == cars.bmw.model) {
-		if (yearCheck == cars.bmw.year) {
-		  contentBlock.empty();
-		  var newInfo = 
-		  '<h1><img src="'+cars.bmw.img+'" alt="Письма мастера дзен"></h1>' +
-		  '<h2>Марка: '+cars.bmw.make+'</h2>' +
-		  '<h2>Модель: '+cars.bmw.model+'</h2>' +
-		  '<h2>Год выпуска: '+cars.bmw.year+'</h2>';
-		  contentBlock.append(newInfo);
-		}
-	  }
-	}//bmw
-	if (makeCheck == cars.audi.make) {
-	  if (modelCheck == cars.audi.model) {
-		if (yearCheck == cars.audi.year) {
-		  contentBlock.empty();
-		  var newInfo = 
-		  '<h1><img src="'+cars.audi.img+'" alt="Письма мастера дзен"></h1>' +
-		  '<h2>Марка: '+cars.audi.make+'</h2>' +
-		  '<h2>Модель: '+cars.audi.model+'</h2>' +
-		  '<h2>Год выпуска: '+cars.audi.year+'</h2>';
-		  contentBlock.append(newInfo);
-		}
-	  }
-	}//audi
-	if (makeCheck == cars.mazda.make) {
-	  if (modelCheck == cars.mazda.model) {
-		if (yearCheck == cars.mazda.year) {
-		  contentBlock.empty();
-		  var newInfo = 
-		  '<h1><img src="'+cars.mazda.img+'" alt="Письма мастера дзен"></h1>' +
-		  '<h2>Марка: '+cars.mazda.make+'</h2>' +
-		  '<h2>Модель: '+cars.mazda.model+'</h2>' +
-		  '<h2>Год выпуска: '+cars.mazda.year+'</h2>';
-		  contentBlock.append(newInfo);
-		}
-	  }
-	}//mazda
+      if (modelCheck == cars.bmw.model) {
+	if (yearCheck == cars.bmw.year) {
+	  contentBlock.empty();
+	  var newInfo = 
+	  '<h1><img src="'+cars.bmw.img+'" alt="Письма мастера дзен"></h1>' +
+	  '<h2>Марка: '+cars.bmw.make+'</h2>' +
+	  '<h2>Модель: '+cars.bmw.model+'</h2>' +
+	  '<h2>Год выпуска: '+cars.bmw.year+'</h2>';
+	  contentBlock.append(newInfo);
+	}
+      }
+    }//bmw
+    if (makeCheck == cars.audi.make) {
+      if (modelCheck == cars.audi.model) {
+	if (yearCheck == cars.audi.year) {
+	  contentBlock.empty();
+	  var newInfo = 
+	  '<h1><img src="'+cars.audi.img+'" alt="Письма мастера дзен"></h1>' +
+	  '<h2>Марка: '+cars.audi.make+'</h2>' +
+	  '<h2>Модель: '+cars.audi.model+'</h2>' +
+	  '<h2>Год выпуска: '+cars.audi.year+'</h2>';
+	  contentBlock.append(newInfo);
+	}
+      }
+    }//audi
+    if (makeCheck == cars.mazda.make) {
+      if (modelCheck == cars.mazda.model) {
+	if (yearCheck == cars.mazda.year) {
+	  contentBlock.empty();
+	  var newInfo = 
+	  '<h1><img src="'+cars.mazda.img+'" alt="Письма мастера дзен"></h1>' +
+	  '<h2>Марка: '+cars.mazda.make+'</h2>' +
+	  '<h2>Модель: '+cars.mazda.model+'</h2>' +
+	  '<h2>Год выпуска: '+cars.mazda.year+'</h2>';
+	  contentBlock.append(newInfo);
+	}
+      }
+    }//mazda
   }
   
   selectUpdate();
