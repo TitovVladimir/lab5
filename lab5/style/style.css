@@ -87,6 +87,6 @@ body {
 }
 
 #choice_block > .reset_button > input:hover {
-	background-color: #38828a;
-	transition: background-color.2s ease;
+  background-color: #38828a;
+  transition: background-color.2s ease;
 }
