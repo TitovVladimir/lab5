@@ -44,7 +44,7 @@ body {
   margin-top: 125px;
 }
 
-#choice_block > .select_menu > select {
+select {
   color: #defff6;
   outline: 0;
   font-family: 'PT Sans', sans-serif;
@@ -61,7 +61,7 @@ body {
   transition: background-color.2s ease;
 }
 
-#choice_block > .select_menu > select:hover {
+select:hover {
   background-color: #38828a;
   transition: background-color.2s ease;
 }

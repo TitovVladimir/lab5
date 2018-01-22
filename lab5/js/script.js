@@ -6,6 +6,8 @@
   var makeCheck = $('.mark_select').val();
   var modelCheck = $('.model_select').val();
   var yearCheck = $('.year_select').val();
+  var disSelect = $('.unDis');
+  var disButton = $('.reset_button');
   var cars = {
 	bmw : {
 	  img: "http://12.torrentino.thruhere.net/vlmdoee/aziatskoe_prityazhenie_skachat_besplatno_124_2.jpg",
@@ -30,8 +32,8 @@
   selectUpdate = function() {
     if (makeCheck == cars.bmw.make){
       if ((cars.bmw.model!=modelCheck)) {
-        modelSelect.empty();
-        yearSelect.empty();
+          modelSelect.empty();
+          yearSelect.empty();
       }
     }
     if (makeCheck == cars.audi.make){
@@ -84,7 +86,7 @@
     }
   }
   
-  viewInfoCar = function() {
+  viewInfoCar = function () {
     var contentBlock = $('#car_info');
     if (makeCheck == cars.bmw.make) {
       if (modelCheck == cars.bmw.model) {
@@ -96,6 +98,8 @@
 	  '<h2>Модель: '+cars.bmw.model+'</h2>' +
 	  '<h2>Год выпуска: '+cars.bmw.year+'</h2>';
 	  contentBlock.append(newInfo);
+	  disButton.empty();
+	  disButton.append('<input type="submit" value="Сброс!">');
 	}
       }
     }//bmw
@@ -109,6 +113,8 @@
 	  '<h2>Модель: '+cars.audi.model+'</h2>' +
 	  '<h2>Год выпуска: '+cars.audi.year+'</h2>';
 	  contentBlock.append(newInfo);
+	  disButton.empty();
+	  disButton.append('<input type="submit" value="Сброс!">');
 	}
       }
     }//audi
@@ -122,6 +128,8 @@
 	  '<h2>Модель: '+cars.mazda.model+'</h2>' +
 	  '<h2>Год выпуска: '+cars.mazda.year+'</h2>';
 	  contentBlock.append(newInfo);
+	  disButton.empty();
+	  disButton.append('<input type="submit" value="Сброс!">');
 	}
       }
     }//mazda
