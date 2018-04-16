@@ -10,16 +10,16 @@
   var disSelect = $('.unDis');
   var disButton = $('.reset_button');
   var cars = 
-    [{img: "https://avatars.mds.yandex.net/get-autoru-all/914564/be8f511db0ed7d385ae9d62ef27a4eec/320x240", make: "BMW", model: "3er", year: "2013" },
-	{img: "https://i.ytimg.com/vi/A7KUSlGmVhc/mqdefault.jpg", make: "Audi", model: "rs6", year: "2017" },
-	{img: "http://40.img.avito.st/288x216/3703403040.jpg", make: "Mazda", model: "6", year: "2008" }];
+    [{img: "https://avatars.mds.yandex.net/get-autoru-all/914564/be8f511db0ed7d385ae9d62ef27a4eec/320x240", mark: "BMW", model: "3er", year: "2013" },
+	{img: "https://i.ytimg.com/vi/A7KUSlGmVhc/mqdefault.jpg", mark: "Audi", model: "rs6", year: "2017" },
+	{img: "http://40.img.avito.st/288x216/3703403040.jpg", mark: "Mazda", model: "6", year: "2008" }];
   loadMarks = function() {
 	var allMarks = "";
 	for (i=0; cars[i] != undefined; i++) {
 	  if (cars[i+1] != undefined) {
-	    allMarks = allMarks + "'<option>"+cars[i].make+"</option>'+";
+	    allMarks = allMarks + "'<option>"+cars[i].mark+"</option>'+";
 	  } else {
-		allMarks = allMarks + "'<option>"+cars[i].make+"</option>';";  
+		allMarks = allMarks + "'<option>"+cars[i].mark+"</option>';";  
 	  }
 	};
     var markSelectUpdate =
@@ -36,7 +36,7 @@
     modelCheck = $('.model_select').val();
     yearCheck = $('.year_select').val();
 	for (var i=0; cars[i] != undefined; i++) {
-	  if (cars[i].make == markCheck) {
+	  if (cars[i].mark == markCheck) {
 		if (cars[i].model == modelCheck) {
 		  if (cars[i].year == yearCheck) {
 			imgCar = cars[i].img;
@@ -48,7 +48,7 @@
 	console.log(numberCar);
 	var newInfo = 
 	'<h1><img src="'+cars[numberCar].img+'" alt=""></h1>' +
-	'<h2>Марка: '+cars[numberCar].make+'</h2>' +
+	'<h2>Марка: '+cars[numberCar].mark+'</h2>' +
 	'<h2>Модель: '+cars[numberCar].model+'</h2>' +
 	'<h2>Год выпуска: '+cars[numberCar].year+'</h2>';
 	contentBlock.append(newInfo);
@@ -66,7 +66,7 @@
     var allModels = "";
 	markCheck = $('.mark_select').val();
 	for (i=0; cars[i] != undefined; i++) {
-	  if (cars[i].make == markCheck) {
+	  if (cars[i].mark == markCheck) {
 	    allModels = allModels + "'<option>"+cars[i].model+"</option>'+";
 	  } 
 	};
