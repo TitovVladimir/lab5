@@ -90,3 +90,19 @@ select:hover {
   background-color: #38828a;
   transition: background-color.2s ease;
 }
+
+#car_info {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+
+#car_info {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#car_info > h1 > img {
+  border: 2px double #0f2427;
+  border-radius: 10px 10px 10px 10px;	
+}
