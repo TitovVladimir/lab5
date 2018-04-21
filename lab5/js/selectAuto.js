@@ -10,9 +10,11 @@
   var disSelect = $('.unDis');
   var disButton = $('.reset_button');
   var cars = 
-    [{img: "https://avatars.mds.yandex.net/get-autoru-all/914564/be8f511db0ed7d385ae9d62ef27a4eec/320x240", mark: "BMW", model: "3er", year: "2013" },
-	{img: "https://i.ytimg.com/vi/A7KUSlGmVhc/mqdefault.jpg", mark: "Audi", model: "rs6", year: "2017" },
-	{img: "http://40.img.avito.st/288x216/3703403040.jpg", mark: "Mazda", model: "6", year: "2008" }];
+    [{img: "img/bmw3.webp", mark: "BMW", model: "3er", year: "2013" },
+	{img: "img/rs6.jpg", mark: "Audi", model: "rs6", year: "2017" },
+	{img: "img/suberb.jpg", mark: "Scoda", model: "Superb", year: "2017" },
+	{img: "img/golf.jpg", mark: "VW", model: "Golf 7 GTI", year: "2015" },
+	{img: "img/mazda6.jpg", mark: "Mazda", model: "6", year: "2008" }];
   loadMarks = function() {
 	var allMarks = "";
 	for (i=0; cars[i] != undefined; i++) {
